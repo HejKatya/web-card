@@ -1,0 +1,129 @@
+/* common styles */
+body {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    min-width: 1000px;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    ;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: seagreen;
+}
+
+a:hover {
+    color: lightblue;
+    transition: color 0.3s ease-in-out;
+}
+
+.element-heading {
+    padding: 10px;
+    color: darkgreen;
+    border-left: 3px solid seagreen;
+}
+
+/* header */
+
+.header {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid seagreen;
+    background-color: white;
+}
+
+.header-navlist {
+    list-style: none;
+    display: flex;
+}
+
+.header-navlist-item {
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* main */
+
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-heading {
+    font-size: 2rem;
+    color: darkgreen;
+    text-align: center;
+}
+
+.main-img {
+    width: 350px;
+    border: 2px solid darkgreen;
+}
+
+.info-item {
+    margin-left: 30px;
+    flex-basis: 25%;
+}
+
+.element {
+    height: 150px;
+    margin-top: 20px;
+}
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+    color: gray;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid seagreen;
+}
+
+.footer-item {
+    font-size: 1rem;
+    margin-right: 15px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .main-container {
+        display: block;
+        text-align: center;
+    }
+
+    .element {
+        height: auto;
+    }
+}
